@@ -1,9 +1,10 @@
-FROM quay.io/spivegin/php7
+FROM quay.io/spivegin/php7:7.1
 
 WORKDIR /opt/tlm/html 
+ENV PHP_VERSION=7.1
 
 RUN apt-get update &&\ 
-    apt-get install -y php7.0-zip php7.0-bcmath php7.0-imap php7.0-curl php7.0-opcache php7.0-mysql && \
+    apt-get install -y php${PHP_VERSION}-zip php${PHP_VERSION}-bcmath php${PHP_VERSION}-imap php${PHP_VERSION}-curl php${PHP_VERSION}-opcache php${PHP_VERSION}-mysql && \
     apt-get autoclean && apt-get autoremove &&\
     rm -rf /tmp/* /var/lib/apt/lists/* /var/tmp/* 
 ADD https://github.com/phpmyadmin/phpmyadmin/archive/RELEASE_4_8_5.zip /opt/tlm/html
