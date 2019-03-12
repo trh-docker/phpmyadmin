@@ -11,6 +11,7 @@ ADD https://files.phpmyadmin.net/phpMyAdmin/4.8.5/phpMyAdmin-4.8.5-all-languages
 # phpmyadmin-RELEASE_4_8_5
 RUN unzip phpMyAdmin-4.8.5-all-languages.zip &&\
     rm phpMyAdmin-4.8.5-all-languages.zip &&\
+    mkdir /opt/tlm/html/save /opt/tlm/html/upload &&\
     chown -R www-data:www-data . &&\
     apt-get autoclean && apt-get autoremove &&\
     rm -rf /tmp/* /var/lib/apt/lists/* /var/tmp/*
