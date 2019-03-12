@@ -4,7 +4,7 @@ WORKDIR /opt/tlm/html
 ENV PHP_VERSION=7.1
 
 RUN apt-get update &&\ 
-    apt-get install -y php${PHP_VERSION}-zip php${PHP_VERSION}-bcmath php${PHP_VERSION}-imap php${PHP_VERSION}-curl php${PHP_VERSION}-opcache php${PHP_VERSION}-mysql && \
+    apt-get install -y bzip2 php${PHP_VERSION}-zip php${PHP_VERSION}-bcmath php${PHP_VERSION}-imap php${PHP_VERSION}-curl php${PHP_VERSION}-opcache php${PHP_VERSION}-mysql && \
     apt-get autoclean && apt-get autoremove &&\
     rm -rf /tmp/* /var/lib/apt/lists/* /var/tmp/* 
 ADD https://files.phpmyadmin.net/phpMyAdmin/4.8.5/phpMyAdmin-4.8.5-all-languages.zip /opt/tlm/html
