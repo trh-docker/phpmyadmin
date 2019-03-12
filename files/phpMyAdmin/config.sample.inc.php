@@ -71,8 +71,8 @@ $cfg['Servers'][$i]['AllowNoPassword'] = true;
 /**
  * Directories for saving/loading files from server
  */
-$cfg['UploadDir'] = '';
-$cfg['SaveDir'] = '';
+$cfg['UploadDir'] = '/opt/tlm/html/phpMyAdmin-4.8.5-all-languages/upload/';
+$cfg['SaveDir'] = '/opt/tlm/html/phpMyAdmin-4.8.5-all-languages/save/';
 
 /**
  * Whether to display icons or text or both icons and text in table row
