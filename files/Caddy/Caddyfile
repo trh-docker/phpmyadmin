@@ -1,5 +1,5 @@
 {$DOMAIN}:{$PORT} {
-    root /opt/tlm/html/phpmyadmin-RELEASE_4_8_5/
+    root /opt/tlm/html/phpMyAdmin-4.8.5-all-languages/
     header / {
         Host {host}
         X-Real-IP {remote}
@@ -8,7 +8,7 @@
         X-Forwarded-Proto {scheme}
     }
 
-    fastcgi / /run/php/php7.0-fpm.sock php {
+    fastcgi / /run/php/php7.1-fpm.sock php {
         index index.php
     }
 }
