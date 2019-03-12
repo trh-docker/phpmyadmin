@@ -71,8 +71,8 @@ $cfg['Servers'][$i]['AllowNoPassword'] = true;
 /**
  * Directories for saving/loading files from server
  */
-$cfg['UploadDir'] = ' /opt/tlm/html/upload';
-$cfg['SaveDir'] = ' /opt/tlm/html/save';
+$cfg['UploadDir'] = '/opt/tlm/html/upload';
+$cfg['SaveDir'] = '/opt/tlm/html/save';
 
 /**
  * Whether to display icons or text or both icons and text in table row
